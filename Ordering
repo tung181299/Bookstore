@@ -1,0 +1,63 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package query;
+
+import java.sql.Date;
+
+/**
+ *
+ * @author trufmgajtgiof
+ */
+public class Orders {
+    private int orderID;
+    private String username;
+    private String isbn;
+    private String orderDate;
+    private String status;
+    
+    public Orders(int oID, String user, String oisbn, String odate, String ostatus){
+        orderID = oID;
+        username = user;
+        isbn = oisbn;
+        orderDate = odate;
+        status = ostatus;
+    }
+    
+    public void setOrderID(int id){
+        orderID = id;
+    }
+    public int getOrderID(){
+        return orderID;
+    }
+    
+    public void setUsername(String user){
+        username = user;
+    }
+    public String getUsernae(){
+        return username;
+    }
+    
+    public void setISBN(String oisbn){
+        isbn = oisbn;
+    }
+    public String getISBN(){
+        return isbn;
+    }
+    
+    public void setDate(String date){
+        orderDate = date;
+    }
+    public String getDate(){
+        return orderDate;
+    }
+    
+    public void setStatus(String stat){
+        status = stat;
+    }
+    public String getStatus(){
+        return status;
+    }
+}
